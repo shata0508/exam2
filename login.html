@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+ <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">CO</span>exmpo</h1>
+        </div>
+        <nav>
+          <ul>
+            <li onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</li>
+	<li onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Login.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div  >
+      <label><b>Username</b></label>
+      <input type="text1" placeholder="User Id:  "required >
+<br>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password: "required >
+	   <br>Forgot <a href="forgot-password.html"onclick="document.getElementById('id03').style.display='block'" style="width:auto;">password?</a>
+<br>
+      <br>
+	<b>Login as:</b>
+		 <input type="radio" name="login_type" value="administrator" checked> Administrator
+ 		<input type="radio" name="login_type" value="student"> Student
+<br>
+	
+      <button type="submit"class="signupbtn">Login</button>
+	  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    
+	  
+     
+   
+<br>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+
+</form>
+</div>
+
+
+
+<div id="id02" class="modal">
+
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div >
+    <form align="center">
+ <fieldset>
+    <legend align="center">Personal information:</legend>
+	First Name:	<input type="text1" name"fname">
+<br>
+
+	Middle Name:	<input type="text1" name"mname">
+<br>
+	Last Name:	<input type="text1" name"lname">
+
+	
+<br><br>
+	Choose Institute / Organisation:	 
+	<select name="org">
+    <option value="country" selected>choose your organisation</option>
+    <option value="iem">Institute Of Engineering and Management, Salt lake</option>
+    <option value="tec">Techno India, Salt Lake</option>
+    <option value="uem">University of Engineering and Management</option>
+    <option value="ju">Jadavpur University</option>
+	<option value="bp">B.P.Poddar</option>
+	<option value="other">Other</option>
+  </select>
+
+	State:	
+<select name="country">
+    <option value="State" selected>choose your State</option>
+    <option value="AP">Arunanchal Pradesh</option>
+    <option value="Bhopal">Bhopal</option>
+    <option value="Chan">Chandigarh</option>
+	<option value="Drk">Darjeeling</option>		
+    <option value="Delhi">Delhi</option>
+	<option value="JK">Jammu and Kashmir</option>
+	<option value="WB">West Bengal</option>
+	
+  </select>
+<br><br>
+	Gender:
+		 <input type="radio" name="gender" value="male" checked> Male
+ 		<input type="radio" name="gender" value="female"> Female
+  		<input type="radio" name="gender" value="other"> Other
+<br><br>
+	 Birthday:
+  <input type="date" name="bday">
+<br><br>
+Phn no:	<input type="tel" name"a2">
+</fieldset>
+      <label><b>Email</b></label>
+      <input type="text1" placeholder="Enter Email" name="email" required>
+<br>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw"id="psw" required>
+	  <div id="message">
+  <h3>Password must contain the following:</h3>
+	<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+	<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+	<p id="number" class="invalid">A <b>number</b></p>
+	<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+<br>
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<br>
+	  <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>.
+	  
+	  </form>
+	  </div>
+	  </form>
+	  </div>
+<section id="showcase">
+      <div class="container">
+        <h1>Online AI based exam System</h1>
+		
+        <p>Giving exams is easy and its fully online based. Exam is AI based and its fully depend on weightage.</p>
+      </div>
+    </section>
+<section id="showcase2">
+	<div class="container">
+		<h2>Course Wise Exam <img src="./images/exam.jpg" align="right"class="imgcontainer"></h2>
+		<p>Exams will be on individual courses.Video lectures or information about the part where your weakness.</p>
+	</div>
+</section>
+
+<footer>
+      <p>Coexmpo group</p>
+    </footer>
+	<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+</body>
+</html>
